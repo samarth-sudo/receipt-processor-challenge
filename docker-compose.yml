@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  receipt-processor:
+    build: .
+    ports:
+      - "8080:8080"
+    container_name: receipt-processor
+    restart: unless-stopped
